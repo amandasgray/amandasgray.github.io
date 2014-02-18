@@ -1,4 +1,80 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@font-face {
+  font-family: brandon-grotesque-regular;
+  src: url(../fonts/Brandon_Grotesque/Brandon_reg.otf);
+}
+
+body {
+  margin: 0;
+}
+
+/* header */
+.main-header {
+  width: 100%;
+  height: 67px;
+  background-color: black;
+  border-bottom: 2px solid #eee2d4;
+}
+
+header .logo {
+  padding: 15px;
+  font-size: 25px;
+  color: #eee2d4;
+  float: left;
+  font-family: brandon-grotesque-regular;
+}
+
+/* main nav */
+.main-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.main-nav li {
+  padding-left: 15px;
+  border-bottom: 2px solid black;
+}
+
+.about {
+  background: #7ee9cd;
+  border-top: 2px solid black;
+}
+
+.publications {
+  background-color: #ee6be2;
+}
+
+.blog {
+  background-color: #fc518b;
+}
+
+.contact {
+  background-color: #7ee9cd;
+}
+
+.main-nav h2 {
+  font-family: brandon-grotesque-regular;
+  margin: 0;
+  padding: 20px 0;
+}
+
+/* footer */
+.footer-main {
+  width: 100%;
+  height: 67px;
+  clear: both;
+  background-color: black;
+  border-top: 2px solid #eee2d4;
+}
+
+.footer-text {
+  font-size: 16px;
+  color: #eee2d4;
+  padding: 22px;
+  float: right;
+  font-family: brandon-grotesque-regular;
+}
+
+/*@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
   padding:50px;
@@ -253,3 +329,4 @@ footer {
     color:#444;
   }
 }
+*/
