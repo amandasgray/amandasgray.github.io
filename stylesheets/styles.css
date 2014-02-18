@@ -34,10 +34,24 @@ header .logo {
   font-family: brandon-grotesque-regular;
 }
 
+header .logo:hover {
+  color: yellow;
+}
+
 /* main nav */
 .main-nav {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-nav a:hover {
+  color: yellow;
 }
 
 .main-nav li {
@@ -68,6 +82,11 @@ header .logo {
   padding: 20px 0;
 }
 
+.angle-double-right {
+  display: inline-block;
+  float: right;
+}
+
 /* footer */
 .footer-main {
   width: 100%;
@@ -84,6 +103,10 @@ header .logo {
   padding-top: 0;
   float: right;
   font-family: brandon-grotesque-regular;
+}
+
+.footer-text:hover {
+  color: yellow;
 }
 
 /*@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
