@@ -3,6 +3,12 @@
   src: url(../fonts/Brandon_Grotesque/Brandon_reg.otf);
 }
 
+@font-face {
+font-family: brandon-grotesque-regular;
+src: url(../fonts/Brandon_Grotesque/Brandon_bld.otf);
+font-weight:bold;
+}
+
 .ng-scope {
   background: black;
 }
