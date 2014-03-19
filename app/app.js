@@ -2,11 +2,26 @@ var AmandaGrayApp = angular.module('AmandaGrayApp', ['ngRoute']);
 
 	AmandaGrayApp.config(function ($routeProvider) {
 		$routeProvider 
-			.when('/view1', 
+			.when('/home', 
 				{
 					controller: 'MainCtrl',
-					templateUrl: '/app/partials/View1.html'
+					templateUrl: '/app/partials/Home.html'
 				})
-			.otherwise({ redirectTo: '/view1'
+			.when('/about', 
+				{
+					controller: 'MainCtrl',
+					templateUrl: '/app/partials/About.html'
+				})
+			.when('/publications', 
+				{
+					controller: 'MainCtrl',
+					templateUrl: '/app/partials/Publications.html'
+				})
+			.when('/contact', 
+				{
+					controller: 'MainCtrl',
+					templateUrl: '/app/partials/Contact.html'
+				})
+			.otherwise({ redirectTo: '/home'
 				});
 	})

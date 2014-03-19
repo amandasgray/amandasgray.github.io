@@ -19,10 +19,10 @@ font-weight:bold;
   background: black;
 }
 
-html, body {
+html, body, .main-body {
   font-size: 118%;
-  height:100%;
-  background: #000;
+  min-height:100%;
+  background: black;
   margin: none;
   font-family: josefin-slab;
   line-height: 1.4;
@@ -30,33 +30,26 @@ html, body {
 
 .wrapper {
   margin: 0 auto;
+  min-height: 100%;
 }
 
 /* header */
-.main-header {
-  width: 100%;
-  height: 67px;
+.navbar-brand {
   background-color: black;
-/*  border-bottom: 2px solid #eee2d4;
-*/}
-
-header .logo {
   padding: 15px;
-  font-size: 25px;
+  font-size: 2em;
   color: #fc518b;
   float: left;
   font-family: brandon-grotesque-regular;
 }
 
-header .logo:hover {
+.navbar-brand:hover {
   color: yellow;
 }
 
 /* main nav */
 .main-nav {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 .main-nav a {
@@ -66,14 +59,15 @@ header .logo:hover {
 
 .main-nav a:hover {
   color: yellow;
+  text-decoration: none;
 }
 
-.container {
+/*.container {
   margin: 0 auto;
   width: 96%;
-}
+}*/
 
-.main-nav li {
+.main-nav .section {
   padding: 20px 0;
   border-bottom: 2px solid black;
 }
@@ -97,6 +91,7 @@ header .logo:hover {
 
 .main-nav h3 {
   font-family: brandon-grotesque-regular;
+  padding-left: 20px;
   margin: 0;
   cursor: pointer;
 }
@@ -121,14 +116,19 @@ header .logo:hover {
   display: inline-block;
 }
 
+.selected {
+  text-align: center;
+}
+
 /* footer */
-.footer-main {
-  width: 100%;
-  height: 67px;
+#footer {
   clear: both;
+  height: 60px;
   background-color: black;
-/*  border-top: 2px solid #eee2d4;
-*/}
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
 
 .footer-text {
   font-size: 16px;
