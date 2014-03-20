@@ -19,31 +19,37 @@ font-weight:bold;
   background: black;
 }
 
+.clear {
+    clear: both;
+}
+
 html, body, .main-body {
   font-size: 118%;
   min-height:100%;
   background: black;
   margin: none;
-  font-family: josefin-slab;
+  font-family: brandon-grotesque-regular;
   line-height: 1.4;
 }
 
 .wrapper {
   margin: 0 auto;
   min-height: 100%;
+  width: 100%;
 }
 
 /* header */
+.navbar-nav {
+  margin: 0;
+}
 .navbar-brand {
   background-color: black;
   padding: 15px;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #fc518b;
-  float: left;
-  font-family: brandon-grotesque-regular;
 }
 
-.navbar-brand:hover {
+.navbar-brand:hover{
   color: yellow;
 }
 
@@ -74,7 +80,6 @@ html, body, .main-body {
 
 .about {
   background: #eee2d4;
-  border-top: 2px solid black;
 }
 
 .publications {
@@ -90,7 +95,6 @@ html, body, .main-body {
 }
 
 .main-nav h3 {
-  font-family: brandon-grotesque-regular;
   padding-left: 20px;
   margin: 0;
   cursor: pointer;
@@ -131,11 +135,10 @@ html, body, .main-body {
 }
 
 .footer-text {
-  font-size: 16px;
+  font-size: .9em;
   color: #fc518b;
   padding: 22px;
   float: right;
-  font-family: brandon-grotesque-regular;
 }
 
 .footer-text:hover {
