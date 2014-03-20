@@ -5,22 +5,22 @@ var AmandaGrayApp = angular.module('AmandaGrayApp', ['ngRoute']);
 			.when('/home', 
 				{
 					controller: 'MainCtrl',
-					templateUrl: '/app/partials/Home.html'
+					templateUrl: '/app/partials/home.html'
 				})
 			.when('/about', 
 				{
 					controller: 'MainCtrl',
-					templateUrl: '/app/partials/About.html'
+					templateUrl: '/app/partials/about.html'
 				})
 			.when('/publications', 
 				{
 					controller: 'MainCtrl',
-					templateUrl: '/app/partials/Publications.html'
+					templateUrl: '/app/partials/publications.html'
 				})
 			.when('/contact', 
 				{
 					controller: 'MainCtrl',
-					templateUrl: '/app/partials/Contact.html'
+					templateUrl: '/app/partials/contact.html'
 				})
 			.otherwise({ redirectTo: '/home'
 				});
