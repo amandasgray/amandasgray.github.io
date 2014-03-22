@@ -96,8 +96,22 @@ html, body {
 }
 
 .selected {
-/*  text-align: center;
-*/}
+}
+
+/* page content */
+.content {
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 20px;
+  padding: 40px;
+}
+
+.content p {
+  color: white;
+}
+
+.content a {
+  color: #fc518b;
+}
 
 /* footer */
 #footer {
