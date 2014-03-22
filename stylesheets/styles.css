@@ -15,19 +15,14 @@ src: url(../fonts/Brandon_Grotesque/Brandon_bld.otf);
 font-weight:bold;
 }
 
-.ng-scope {
-  background: black;
-}
-
 .clear {
     clear: both;
 }
 
-html, body, .main-body {
+html, body {
   font-size: 118%;
   min-height:100%;
-  background: black;
-  margin: none;
+  background-color: black;
   font-family: brandon-grotesque-regular;
   line-height: 1.4;
 }
@@ -39,47 +34,39 @@ html, body, .main-body {
 }
 
 /* header */
-.navbar-nav {
-  margin: 0;
-}
-.navbar-brand {
-  background-color: black;
-  padding: 15px;
-  font-size: 1.5em;
+#brand {
+  padding: 35px;
   color: #fc518b;
 }
 
-.navbar-brand:hover{
+#brand:hover{
   color: yellow;
+  background-color: black;
 }
 
-/* main nav */
-.main-nav {
-  list-style-type: none;
+/* body */
+.main-body {
+  width: 96%;
+  margin: 0 auto;
 }
 
-.main-nav a {
+.main-body a {
   text-decoration: none;
   color: black;
 }
 
-.main-nav a:hover {
+.main-body a:hover {
   color: yellow;
   text-decoration: none;
 }
 
-/*.container {
-  margin: 0 auto;
-  width: 96%;
-}*/
-
-.main-nav .section {
+.main-body .section {
   padding: 20px 0;
   border-bottom: 2px solid black;
 }
 
 .about {
-  background: #eee2d4;
+  background-color: #eee2d4;
 }
 
 .publications {
@@ -94,7 +81,7 @@ html, body, .main-body {
   background-color: #7ee9cd;
 }
 
-.main-nav h3 {
+.main-body h3 {
   padding-left: 20px;
   margin: 0;
   cursor: pointer;
@@ -104,25 +91,13 @@ html, body, .main-body {
   display: none;
 }
 
-#pub:hover #pub-arrow {
-  display: inline-block;
-}
-
-#abo:hover #abo-arrow {
-  display: inline-block;
-}
-
-#con:hover #con-arrow {
-  display: inline-block;
-}
-
-#blo:hover #blo-arrow {
+#pub:hover #pub-arrow, #abo:hover #abo-arrow, #con:hover #con-arrow, #blo:hover #blo-arrow {
   display: inline-block;
 }
 
 .selected {
-  text-align: center;
-}
+/*  text-align: center;
+*/}
 
 /* footer */
 #footer {
