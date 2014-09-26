@@ -10,8 +10,13 @@
   font-family: brandon-grotesque-regular;
   src: url(../fonts/Brandon_Grotesque/Brandon_bld.otf);
   font-weight: bold; }
-.clear {
-  clear: both; }
+header {
+  *zoom: 1; }
+  header:before, header:after {
+    content: " ";
+    display: table; }
+  header:after {
+    clear: both; }
 
 html, body {
   font-size: 118%;
@@ -25,15 +30,13 @@ html, body {
   min-height: 100%;
   width: 100%; }
 
-/* header */
-#brand {
+header #brand {
   padding: 35px 20px;
   color: #fc518b; }
-  #brand:hover {
+  header #brand:hover {
     color: yellow;
     background-color: black; }
 
-/* body */
 .main-body {
   width: 96%;
   margin: 0 auto; }
@@ -50,6 +53,14 @@ html, body {
     padding-left: 20px;
     margin: 0;
     cursor: pointer; }
+  .main-body .content {
+    background-color: rgba(255, 255, 255, 0.25);
+    margin-left: 20px;
+    padding: 40px; }
+    .main-body .content p {
+      color: white; }
+    .main-body .content a {
+      color: #fc518b; }
 
 .about {
   background-color: #eee2d4; }
@@ -68,13 +79,3 @@ html, body {
 
 #pub:hover #pub-arrow, #abo:hover #abo-arrow, #con:hover #con-arrow, #blo:hover #blo-arrow {
   display: inline-block; }
-
-/* page content */
-.content {
-  background-color: rgba(255, 255, 255, 0.25);
-  margin-left: 20px;
-  padding: 40px; }
-  .content p {
-    color: white; }
-  .content a {
-    color: #fc518b; }

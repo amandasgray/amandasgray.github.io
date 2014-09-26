@@ -15,8 +15,15 @@ src: url(../fonts/Brandon_Grotesque/Brandon_bld.otf);
 font-weight:bold;
 }
 
-.clear {
-    clear: both;
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after { 
+   clear: both;
+  }
 }
 
 html, body {
@@ -33,17 +40,18 @@ html, body {
   width: 100%;
 }
 
-/* header */
-#brand {
-  padding: 35px 20px;
-  color: #fc518b;
-  &:hover{
-    color: yellow;
-    background-color: black;
+header {
+  @extend %clearfix;
+  #brand {
+    padding: 35px 20px;
+    color: #fc518b;
+    &:hover{
+      color: yellow;
+      background-color: black;
+    }
   }
 }
 
-/* body */
 .main-body {
   width: 96%;
   margin: 0 auto;
@@ -66,6 +74,19 @@ html, body {
     padding-left: 20px;
     margin: 0;
     cursor: pointer;
+  }
+
+  .content {
+    background-color: rgba(255, 255, 255, 0.25);
+    margin-left: 20px;
+    padding: 40px;
+    p {
+      color: white;
+    }
+
+    a {
+      color: #fc518b;
+    }
   }
 }
 
@@ -91,18 +112,4 @@ html, body {
 
 #pub:hover #pub-arrow, #abo:hover #abo-arrow, #con:hover #con-arrow, #blo:hover #blo-arrow {
   display: inline-block;
-}
-
-/* page content */
-.content {
-  background-color: rgba(255, 255, 255, 0.25);
-  margin-left: 20px;
-  padding: 40px;
-  p {
-    color: white;
-  }
-
-  a {
-    color: #fc518b;
-  }
 }
