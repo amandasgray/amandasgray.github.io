@@ -31,6 +31,7 @@ html, body {
   width: 100%; }
 
 header #brand {
+  font-size: 2em;
   padding: 35px 20px;
   color: #fc518b; }
   header #brand:hover {
